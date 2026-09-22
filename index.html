@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Diamantis — Engineering Portfolio</title>
+<meta name="description" content="Engineering coursework portfolio: OceanGate disaster failure-analysis build and the EasyDose automated pill dispenser, Northeastern University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="#top" class="brand">JD</a>
+    <div class="nav-links">
+      <a href="#oceangate">OceanGate</a>
+      <a href="#easydose">EasyDose</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead" id="top">
+  <div class="masthead-inner">
+    <div class="eyebrow"><span class="dot"></span>ENGINEERING PORTFOLIO &middot; 2025&ndash;2026</div>
+    <h1 class="name">James Diamantis</h1>
+    <p class="role">Mechanical &amp; Biomedical Engineering student at Northeastern University, on the pre-med track.
+      Two projects below trace a year of coursework turning a real-world failure and a real-world care gap into
+      working, tested hardware.</p>
+    <div class="meta-row">
+      <span><b>Program</b> Mechanical/Biomedical Engineering</span>
+      <span><b>Coursework</b> GE 1501 &amp; GE 1502, Cornerstone of Engineering</span>
+      <span><b>Location</b> Boston, MA</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ PROJECT 1: OCEANGATE ============ -->
+  <section class="project" id="oceangate">
+    <div class="project-inner">
+
+      <div class="project-head">
+        <div>
+          <div class="tag">Project 01 &middot; Failure Analysis &amp; Outreach Build</div>
+          <h2>Investigating the OceanGate Disaster</h2>
+        </div>
+        <div class="course-block">
+          GE 1501 &middot; Cornerstone of Engineering I<br>
+          Group 2 &middot; Fall 2025<br>
+          with J. Garces &amp; T. Attarian
+        </div>
+      </div>
+
+      <p class="lede">
+        A three-stage teaching exhibit that reverse-engineers the 2023 <em>Titan</em> submersible implosion for a
+        4th/5th-grade audience &mdash; walking younger students through how substandard materials, schedule pressure,
+        and repeated dives to depth compound into catastrophic failure, and how an engineer would have caught it.
+      </p>
+
+      <div class="media-row">
+        <figure class="media-card">
+          <img src="assets/oceangate-hero.jpg" alt="Breadboard prototype of the Stage 1 Pico depth-alarm circuit, with LEDs and buzzer" loading="lazy">
+          <figcaption>Stage 1 electronics &mdash; the Pico breadboard prototype: LED depth ladder + buzzer alarm circuit.</figcaption>
+        </figure>
+        <figure class="media-card">
+          <img src="assets/oceangate-cad.jpg" alt="My AutoCAD laser-cutting pattern for the Stage 2 enclosure and material-test discs" loading="lazy">
+          <figcaption>Stage 2 &mdash; my AutoCAD cut file for the enclosure panels and material-test discs, sent straight to the laser cutter.</figcaption>
+        </figure>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="num">3</div><div class="lbl">Build stages</div></div>
+        <div class="stat"><div class="num">$12.89</div><div class="lbl">Total budget</div></div>
+        <div class="stat"><div class="num">21 pg</div><div class="lbl">Technical report</div></div>
+        <div class="stat"><div class="num">4</div><div class="lbl">Design milestones</div></div>
+      </div>
+
+      <h3 class="section-lbl">Build — three parallel stages</h3>
+      <div class="stages">
+        <div class="stage-card">
+          <span class="stage-num">STAGE 1 &middot; PICO</span>
+          <div class="stage-name">Depth &amp; pressure alarm</div>
+          <p>Raspberry Pi Pico, LED depth ladder + buzzer that fires as simulated dive depth climbs past safe thresholds.</p>
+        </div>
+        <div class="stage-card mine">
+          <span class="mine-flag">My stage</span>
+          <span class="stage-num">STAGE 2 &middot; STRUCTURE</span>
+          <div class="stage-name">CAD hull &amp; material demo</div>
+          <p>Laser-cut wood/cardboard models in AutoCAD showing how the Titan's carbon-fiber hull behaved under repeated pressure cycling &mdash; sole owner of this stage end to end.</p>
+        </div>
+        <div class="stage-card">
+          <span class="stage-num">STAGE 3 &middot; NARRATIVE</span>
+          <div class="stage-name">Python dive simulator</div>
+          <p>Interactive command-line story that walks the "pilot" through each depth stage's decision points to the implosion.</p>
+        </div>
+      </div>
+
+      <h3 class="section-lbl">What I owned</h3>
+      <p class="lede small">
+        I led Stage 2 solo: modeling the pressure hull and hull-material comparisons in AutoCAD, laser-cutting the
+        physical wood/cardboard demonstration piece, and writing the sections of the final report explaining why the
+        Titan's hand-laid carbon fiber under-performed proven submersible materials like titanium and forged steel.
+      </p>
+
+      <h3 class="section-lbl">Engineering process</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when">Wk 1</div>
+          <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-title">Disaster selection &amp; empathy mapping</div><p>Compared three candidate disasters; chose OceanGate for recency and public familiarity. Built an empathy chart around the audience to pick tangible, hands-on elements.</p></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Wk 2&ndash;3</div>
+          <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-title">Milestone 1&ndash;2: brainstorm &amp; peer critique</div><p>Drafted the three-stage concept; peer feedback pushed the Pico stage to be longer and more failure-resistant to a child mashing the button.</p></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Wk 4&ndash;6</div>
+          <div class="tl-rail"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-content"><div class="tl-title">Milestone 3&ndash;4: build &amp; laser-cut</div><p>Cut and assembled the CAD stage in 3mm plywood; wrote and tested the Python narrative and Pico firmware in parallel, tracked against a Gantt chart.</p></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-when">Dec</div>
+          <div class="tl-rail"><div class="tl-dot"></div></div>
+          <div class="tl-content"><div class="tl-title">Final report &amp; presentation</div><p>21-page technical report covering the engineering-design process, decision-matrix analysis, and full appendix of code and diagrams.</p></div>
+        </div>
+      </div>
+
+      <h3 class="section-lbl">Takeaway</h3>
+      <p class="lede small">
+        This was my first time carrying a fabrication stage start to finish on my own &mdash; not just modeling the
+        hull in AutoCAD, but owning the laser-cutter time, the material tolerances, and explaining the "why" behind
+        the design to teammates who hadn't touched CAD before. It's also where I got comfortable treating a group
+        project like a real handoff: build something someone else can pick up and present without me in the room.
+      </p>
+
+      <h3 class="section-lbl">Skills applied</h3>
+      <div class="chips">
+        <span class="chip">AutoCAD</span>
+        <span class="chip">Laser cutting</span>
+        <span class="chip">Material failure analysis</span>
+        <span class="chip">Empathy mapping</span>
+        <span class="chip">Decision-matrix analysis</span>
+        <span class="chip">Technical writing</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECT 2: EASYDOSE ============ -->
+  <section class="project alt" id="easydose">
+    <div class="project-inner">
+
+      <div class="project-head">
+        <div>
+          <div class="tag">Project 02 &middot; Medical Device Design</div>
+          <h2>EasyDose — Automated Pill Dispenser</h2>
+        </div>
+        <div class="course-block">
+          GE 1502 &middot; Cornerstone of Engineering II<br>
+          Team 3 &middot; Spring 2026<br>
+          with J. Poyer, I. Moody &amp; T. Gramer
+        </div>
+      </div>
+
+      <p class="lede">
+        A self-contained device that dispenses pre-loaded medication at scheduled times for elderly and
+        assisted-living patients &mdash; built to cut nursing-home dosing errors, remove the need for daily manual
+        prep, and give residents with limited dexterity independent access to their own medication.
+      </p>
+
+      <div class="media-row">
+        <figure class="media-card">
+          <img src="assets/easydose-hero.jpg" alt="Finished EasyDose pill dispenser housing, front view" loading="lazy">
+          <figcaption>The finished EasyDose enclosure &mdash; laser-cut MDF housing with three dispensing channels.</figcaption>
+        </figure>
+        <figure class="media-card">
+          <img src="assets/easydose-internals.jpg" alt="CAD render of the EasyDose tube-and-cup dispensing mechanism inside the housing" loading="lazy">
+          <figcaption>CAD render of the final tube-and-cup dispensing mechanism &mdash; one channel per medication, dropping into a shared tray.</figcaption>
+        </figure>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="num">&gt;99%</div><div class="lbl">Dispense accuracy</div></div>
+        <div class="stat"><div class="num">$38.27</div><div class="lbl">Build cost (of $75 cap)</div></div>
+        <div class="stat"><div class="num">&lt;60s</div><div class="lbl">Clock drift target</div></div>
+        <div class="stat"><div class="num">33 pg</div><div class="lbl">Technical report</div></div>
+      </div>
+
+      <h3 class="section-lbl">Design requirements</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Requirement</th><th>Metric</th><th>Target</th></tr></thead>
+          <tbody>
+            <tr><td>Dispensing accuracy</td><td>% successful dispenses</td><td class="num">&gt; 99%</td></tr>
+            <tr><td>Cost</td><td>Total project cost</td><td class="num">&lt; $75</td></tr>
+            <tr><td>Time-keeping accuracy</td><td>Drift vs. accepted time</td><td class="num">&lt; 60s</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="section-lbl">Design evolution</h3>
+      <figure class="media-card wide">
+        <img src="assets/easydose-iteration.jpg" alt="CAD render of the original funnel-and-ramp dispensing design" loading="lazy">
+        <figcaption>v1 concept: funnel-and-ramp dispensing mechanism (88% success, frequent jams) &mdash; later replaced by the vertical tube-and-dropper design above (&gt;99% success).</figcaption>
+      </figure>
+
+      <h3 class="section-lbl">System &amp; build</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>System</th><th>Detail</th></tr></thead>
+          <tbody>
+            <tr><td>Enclosure</td><td>Laser-cut MDF housing, chosen for low cost and minimal warping</td></tr>
+            <tr><td>Dispensing mechanism</td><td>3D-printed PLA tube-and-dropper, one pill per actuation</td></tr>
+            <tr><td>Actuation</td><td>Stepper motors, one per dispenser channel</td></tr>
+            <tr><td>Control</td><td>Raspberry Pi Pico + real-time clock for scheduling accuracy</td></tr>
+            <tr><td>Interface</td><td>Custom desktop GUI (Windows / macOS / Linux) for staff to enter patient, dosage &amp; schedule</td></tr>
+            <tr><td>Accessibility</td><td>Audio + visual dispense alerts for sensory-impaired users</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="section-lbl">Methods used</h3>
+      <div class="chips">
+        <span class="chip">Empathy mapping</span>
+        <span class="chip">Mind mapping</span>
+        <span class="chip">SCAMPER</span>
+        <span class="chip">Value-sensitive design</span>
+        <span class="chip">Utilitarian ethics review</span>
+        <span class="chip">Weighted design-goal matrix</span>
+      </div>
+
+      <h3 class="section-lbl">Takeaway</h3>
+      <p class="lede small">
+        The jump from the funnel to the tube design is the part I'm proudest of: our first version worked in theory
+        but kept failing in practice, and getting from an 88% success rate to over 99% meant actually sitting with
+        the failure mode instead of tweaking around it. It's also the first project where I had to weigh a design
+        decision against who'd actually be using the device &mdash; an elderly patient with limited dexterity, not
+        just a grader.
+      </p>
+
+      <h3 class="section-lbl">What I'd improve next</h3>
+      <p class="lede small">
+        Given more time and budget, the team identified clear next steps: a low-pill sensor, a tray-confirmation
+        sensor to verify a dose was actually taken, food-safe plastic for the dispensing path, and battery backup
+        for power-loss resilience.
+      </p>
+
+      <h3 class="section-lbl">Skills applied</h3>
+      <div class="chips">
+        <span class="chip">SolidWorks</span>
+        <span class="chip">3D printing (PLA)</span>
+        <span class="chip">Laser cutting</span>
+        <span class="chip">Raspberry Pi Pico</span>
+        <span class="chip">Python (Thonny)</span>
+        <span class="chip">Cross-platform GUI design</span>
+        <span class="chip">Design-ethics analysis</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SUMMARY ============ -->
+  <section class="skills-summary" id="skills">
+    <div class="project-inner">
+      <h3 class="section-lbl">All skills, at a glance</h3>
+      <div class="chips big">
+        <span class="chip">AutoCAD</span>
+        <span class="chip">SolidWorks</span>
+        <span class="chip">Laser cutting</span>
+        <span class="chip">3D printing (PLA)</span>
+        <span class="chip">Raspberry Pi Pico</span>
+        <span class="chip">Python</span>
+        <span class="chip">Embedded systems</span>
+        <span class="chip">GUI / UI design</span>
+        <span class="chip">Engineering design process</span>
+        <span class="chip">Decision &amp; ethics analysis</span>
+        <span class="chip">Technical writing</span>
+        <span class="chip">Team leadership</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="project-inner footer-inner">
+    <p>James Diamantis &middot; Mechanical &amp; Biomedical Engineering, Northeastern University &middot; Boston, MA</p>
+    <p class="muted">Class of 2029 &middot; <a href="mailto:diamantis.j@northeastern.edu">diamantis.j@northeastern.edu</a> &middot; (978)-809-5761</p>
+  </div>
+</footer>
+
+</body>
+</html>
